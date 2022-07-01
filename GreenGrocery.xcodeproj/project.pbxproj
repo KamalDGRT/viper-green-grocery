@@ -9,23 +9,33 @@
 /* Begin PBXBuildFile section */
 		D5BEAA94286B228800D4AA65 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BEAA93286B228800D4AA65 /* AppDelegate.swift */; };
 		D5BEAA96286B228800D4AA65 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BEAA95286B228800D4AA65 /* SceneDelegate.swift */; };
-		D5BEAA98286B228800D4AA65 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BEAA97286B228800D4AA65 /* ViewController.swift */; };
+		D5BEAA98286B228800D4AA65 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BEAA97286B228800D4AA65 /* HomeViewController.swift */; };
 		D5BEAA9B286B228800D4AA65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5BEAA99286B228800D4AA65 /* Main.storyboard */; };
 		D5BEAA9D286B228B00D4AA65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5BEAA9C286B228B00D4AA65 /* Assets.xcassets */; };
 		D5BEAAA0286B228B00D4AA65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5BEAA9E286B228B00D4AA65 /* LaunchScreen.storyboard */; };
 		D5BEAAA8286B22E600D4AA65 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = D5BEAAA7286B22E600D4AA65 /* .gitignore */; };
+		D5BEAAAB286B25B700D4AA65 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BEAAAA286B25B700D4AA65 /* HomePresenter.swift */; };
+		D5BEAAAD286B269C00D4AA65 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BEAAAC286B269C00D4AA65 /* HomeRouter.swift */; };
+		D5BEAAAF286B277E00D4AA65 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BEAAAE286B277E00D4AA65 /* HomeInteractor.swift */; };
+		D5BEAAB1286B297800D4AA65 /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BEAAB0286B297800D4AA65 /* HomeModel.swift */; };
+		D5BEAAB4286B2AC000D4AA65 /* HomeModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BEAAB3286B2AC000D4AA65 /* HomeModuleBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D5BEAA90286B228800D4AA65 /* GreenGrocery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GreenGrocery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5BEAA93286B228800D4AA65 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D5BEAA95286B228800D4AA65 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D5BEAA97286B228800D4AA65 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D5BEAA97286B228800D4AA65 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		D5BEAA9A286B228800D4AA65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D5BEAA9C286B228B00D4AA65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D5BEAA9F286B228B00D4AA65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D5BEAAA1286B228B00D4AA65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D5BEAAA7286B22E600D4AA65 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		D5BEAAAA286B25B700D4AA65 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		D5BEAAAC286B269C00D4AA65 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		D5BEAAAE286B277E00D4AA65 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		D5BEAAB0286B297800D4AA65 /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
+		D5BEAAB3286B2AC000D4AA65 /* HomeModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModuleBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,15 +69,36 @@
 		D5BEAA92286B228800D4AA65 /* GreenGrocery */ = {
 			isa = PBXGroup;
 			children = (
+				D5BEAAB2286B29E200D4AA65 /* Entity */,
+				D5BEAAA9286B244700D4AA65 /* HomeModule */,
 				D5BEAA93286B228800D4AA65 /* AppDelegate.swift */,
 				D5BEAA95286B228800D4AA65 /* SceneDelegate.swift */,
-				D5BEAA97286B228800D4AA65 /* ViewController.swift */,
 				D5BEAA99286B228800D4AA65 /* Main.storyboard */,
 				D5BEAA9C286B228B00D4AA65 /* Assets.xcassets */,
 				D5BEAA9E286B228B00D4AA65 /* LaunchScreen.storyboard */,
 				D5BEAAA1286B228B00D4AA65 /* Info.plist */,
 			);
 			path = GreenGrocery;
+			sourceTree = "<group>";
+		};
+		D5BEAAA9286B244700D4AA65 /* HomeModule */ = {
+			isa = PBXGroup;
+			children = (
+				D5BEAA97286B228800D4AA65 /* HomeViewController.swift */,
+				D5BEAAAA286B25B700D4AA65 /* HomePresenter.swift */,
+				D5BEAAAC286B269C00D4AA65 /* HomeRouter.swift */,
+				D5BEAAAE286B277E00D4AA65 /* HomeInteractor.swift */,
+				D5BEAAB3286B2AC000D4AA65 /* HomeModuleBuilder.swift */,
+			);
+			path = HomeModule;
+			sourceTree = "<group>";
+		};
+		D5BEAAB2286B29E200D4AA65 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				D5BEAAB0286B297800D4AA65 /* HomeModel.swift */,
+			);
+			path = Entity;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,9 +173,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5BEAA98286B228800D4AA65 /* ViewController.swift in Sources */,
+				D5BEAAB4286B2AC000D4AA65 /* HomeModuleBuilder.swift in Sources */,
+				D5BEAA98286B228800D4AA65 /* HomeViewController.swift in Sources */,
 				D5BEAA94286B228800D4AA65 /* AppDelegate.swift in Sources */,
 				D5BEAA96286B228800D4AA65 /* SceneDelegate.swift in Sources */,
+				D5BEAAB1286B297800D4AA65 /* HomeModel.swift in Sources */,
+				D5BEAAAF286B277E00D4AA65 /* HomeInteractor.swift in Sources */,
+				D5BEAAAB286B25B700D4AA65 /* HomePresenter.swift in Sources */,
+				D5BEAAAD286B269C00D4AA65 /* HomeRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,7 +333,6 @@
 				INFOPLIST_FILE = GreenGrocery/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -324,7 +359,6 @@
 				INFOPLIST_FILE = GreenGrocery/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
