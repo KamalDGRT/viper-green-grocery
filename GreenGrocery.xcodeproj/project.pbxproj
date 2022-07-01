@@ -22,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D52F71D0286F442E0066A912 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D5BEAA90286B228800D4AA65 /* GreenGrocery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GreenGrocery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5BEAA93286B228800D4AA65 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D5BEAA95286B228800D4AA65 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +54,7 @@
 			isa = PBXGroup;
 			children = (
 				D5BEAAA7286B22E600D4AA65 /* .gitignore */,
+				D52F71D0286F442E0066A912 /* README.md */,
 				D5BEAA92286B228800D4AA65 /* GreenGrocery */,
 				D5BEAA91286B228800D4AA65 /* Products */,
 			);
