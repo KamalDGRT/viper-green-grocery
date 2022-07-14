@@ -10,6 +10,7 @@
 		D52C08FA288081F200677284 /* ViewLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52C08F9288081F200677284 /* ViewLoadable.swift */; };
 		D52C08FC288082F600677284 /* AddBagControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52C08FB288082F600677284 /* AddBagControl.swift */; };
 		D52C08FE2880855400677284 /* AddBagControl.xib in Resources */ = {isa = PBXBuildFile; fileRef = D52C08FD2880855400677284 /* AddBagControl.xib */; };
+		D52C09012880A32100677284 /* AddBagViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52C09002880A32100677284 /* AddBagViewModel.swift */; };
 		D5BEAA94286B228800D4AA65 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BEAA93286B228800D4AA65 /* AppDelegate.swift */; };
 		D5BEAA96286B228800D4AA65 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BEAA95286B228800D4AA65 /* SceneDelegate.swift */; };
 		D5BEAA98286B228800D4AA65 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BEAA97286B228800D4AA65 /* HomeViewController.swift */; };
@@ -28,6 +29,7 @@
 		D52C08F9288081F200677284 /* ViewLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewLoadable.swift; sourceTree = "<group>"; };
 		D52C08FB288082F600677284 /* AddBagControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBagControl.swift; sourceTree = "<group>"; };
 		D52C08FD2880855400677284 /* AddBagControl.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddBagControl.xib; sourceTree = "<group>"; };
+		D52C09002880A32100677284 /* AddBagViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBagViewModel.swift; sourceTree = "<group>"; };
 		D52F71D0286F442E0066A912 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D5BEAA90286B228800D4AA65 /* GreenGrocery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GreenGrocery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5BEAA93286B228800D4AA65 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +84,14 @@
 			path = Shared;
 			sourceTree = "<group>";
 		};
+		D52C08FF2880A2FB00677284 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				D52C09002880A32100677284 /* AddBagViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		D5BEAA87286B228800D4AA65 = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +113,7 @@
 		D5BEAA92286B228800D4AA65 /* GreenGrocery */ = {
 			isa = PBXGroup;
 			children = (
+				D52C08FF2880A2FB00677284 /* ViewModels */,
 				D52C08F828807FDC00677284 /* Shared */,
 				D52C08F728807FD200677284 /* Control */,
 				D5BEAAB2286B29E200D4AA65 /* Entity */,
@@ -218,6 +229,7 @@
 				D5BEAAAF286B277E00D4AA65 /* HomeInteractor.swift in Sources */,
 				D5BEAAAB286B25B700D4AA65 /* HomePresenter.swift in Sources */,
 				D5BEAAAD286B269C00D4AA65 /* HomeRouter.swift in Sources */,
+				D52C09012880A32100677284 /* AddBagViewModel.swift in Sources */,
 				D52C08FA288081F200677284 /* ViewLoadable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
