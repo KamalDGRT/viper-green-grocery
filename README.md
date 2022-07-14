@@ -32,7 +32,7 @@ responsible for handling this and is moved to SceneDelegate.
         <tr>
             <td>1</td>
             <td> <a href="https://www.youtube.com/watch?v=7BBFrHF_TYo">
-                 Beginning VIPER in iOS App Developmen
+                 Beginning VIPER in iOS App Development
                  </a>
             </td>
             <td> 25th June 2022 </td>

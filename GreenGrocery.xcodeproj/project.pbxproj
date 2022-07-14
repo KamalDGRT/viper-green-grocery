@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D52C08FA288081F200677284 /* ViewLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52C08F9288081F200677284 /* ViewLoadable.swift */; };
+		D52C08FC288082F600677284 /* AddBagControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52C08FB288082F600677284 /* AddBagControl.swift */; };
+		D52C08FE2880855400677284 /* AddBagControl.xib in Resources */ = {isa = PBXBuildFile; fileRef = D52C08FD2880855400677284 /* AddBagControl.xib */; };
 		D5BEAA94286B228800D4AA65 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BEAA93286B228800D4AA65 /* AppDelegate.swift */; };
 		D5BEAA96286B228800D4AA65 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BEAA95286B228800D4AA65 /* SceneDelegate.swift */; };
 		D5BEAA98286B228800D4AA65 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BEAA97286B228800D4AA65 /* HomeViewController.swift */; };
@@ -22,6 +25,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D52C08F9288081F200677284 /* ViewLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewLoadable.swift; sourceTree = "<group>"; };
+		D52C08FB288082F600677284 /* AddBagControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBagControl.swift; sourceTree = "<group>"; };
+		D52C08FD2880855400677284 /* AddBagControl.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddBagControl.xib; sourceTree = "<group>"; };
 		D52F71D0286F442E0066A912 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D5BEAA90286B228800D4AA65 /* GreenGrocery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GreenGrocery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5BEAA93286B228800D4AA65 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -50,6 +56,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D52C08F628807FBC00677284 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D5BEAA97286B228800D4AA65 /* HomeViewController.swift */,
+				D5BEAAB3286B2AC000D4AA65 /* HomeModuleBuilder.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D52C08F728807FD200677284 /* Control */ = {
+			isa = PBXGroup;
+			children = (
+				D52C08FB288082F600677284 /* AddBagControl.swift */,
+				D52C08FD2880855400677284 /* AddBagControl.xib */,
+			);
+			path = Control;
+			sourceTree = "<group>";
+		};
+		D52C08F828807FDC00677284 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				D52C08F9288081F200677284 /* ViewLoadable.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
 		D5BEAA87286B228800D4AA65 = {
 			isa = PBXGroup;
 			children = (
@@ -71,6 +103,8 @@
 		D5BEAA92286B228800D4AA65 /* GreenGrocery */ = {
 			isa = PBXGroup;
 			children = (
+				D52C08F828807FDC00677284 /* Shared */,
+				D52C08F728807FD200677284 /* Control */,
 				D5BEAAB2286B29E200D4AA65 /* Entity */,
 				D5BEAAA9286B244700D4AA65 /* HomeModule */,
 				D5BEAA93286B228800D4AA65 /* AppDelegate.swift */,
@@ -86,11 +120,10 @@
 		D5BEAAA9286B244700D4AA65 /* HomeModule */ = {
 			isa = PBXGroup;
 			children = (
-				D5BEAA97286B228800D4AA65 /* HomeViewController.swift */,
+				D52C08F628807FBC00677284 /* Controllers */,
 				D5BEAAAA286B25B700D4AA65 /* HomePresenter.swift */,
 				D5BEAAAC286B269C00D4AA65 /* HomeRouter.swift */,
 				D5BEAAAE286B277E00D4AA65 /* HomeInteractor.swift */,
-				D5BEAAB3286B2AC000D4AA65 /* HomeModuleBuilder.swift */,
 			);
 			path = HomeModule;
 			sourceTree = "<group>";
@@ -164,6 +197,7 @@
 				D5BEAAA8286B22E600D4AA65 /* .gitignore in Resources */,
 				D5BEAAA0286B228B00D4AA65 /* LaunchScreen.storyboard in Resources */,
 				D5BEAA9D286B228B00D4AA65 /* Assets.xcassets in Resources */,
+				D52C08FE2880855400677284 /* AddBagControl.xib in Resources */,
 				D5BEAA9B286B228800D4AA65 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -175,6 +209,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D52C08FC288082F600677284 /* AddBagControl.swift in Sources */,
 				D5BEAAB4286B2AC000D4AA65 /* HomeModuleBuilder.swift in Sources */,
 				D5BEAA98286B228800D4AA65 /* HomeViewController.swift in Sources */,
 				D5BEAA94286B228800D4AA65 /* AppDelegate.swift in Sources */,
@@ -183,6 +218,7 @@
 				D5BEAAAF286B277E00D4AA65 /* HomeInteractor.swift in Sources */,
 				D5BEAAAB286B25B700D4AA65 /* HomePresenter.swift in Sources */,
 				D5BEAAAD286B269C00D4AA65 /* HomeRouter.swift in Sources */,
+				D52C08FA288081F200677284 /* ViewLoadable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
